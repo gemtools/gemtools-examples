@@ -16,6 +16,7 @@ fi
 cd data
 download "data_chr21.fastq.gz"
 download "chr21.fa.gz"
+download "chr21.gtf.gz"
 
-
-
+cd ..
+mkdir -p results
