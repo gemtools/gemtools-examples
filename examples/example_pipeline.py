@@ -26,7 +26,7 @@ if not os.path.exists(data_dir):
 def create_index():
     """Create the example index"""
     print "Preparing index"
-    return gem.index("%s/chr21.fa" % data_dir, "%s/chr21.gem" % result_dir)
+    return gem.index("%s/chr21.fa" % data_dir, "%s/chr21.gem" % result_dir, threads=THREADS)
 
 
 if __name__ == "__main__":
