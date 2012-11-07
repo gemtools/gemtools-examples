@@ -135,6 +135,7 @@ if __name__ == "__main__":
         gem.filter.unmapped(trim_20_mapping),
         index,
         trim_20_split_out,
+        trim=(0, 20),  # this is the additional parameter to control the trimming
         junctions_file=junctions_out,
         threads=THREADS)
 
