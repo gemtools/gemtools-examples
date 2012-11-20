@@ -176,9 +176,7 @@ if __name__ == "__main__":
 
     ## validate and score the alignment
     print "Validating and scoring alignment"
-    #scored = gem.validate_and_score(paired_mapping, index, final_out, threads=8)
-    #scored = gem.score(paired_mapping, index, final_out, threads=8)
-    scored = gem.validate(paired_mapping, index, final_out, threads=THREADS)
+    scored = gem.score(paired_mapping, index, final_out, threads=THREADS)
     if REMOVE_FILES:
         os.remove(paired_out)
 
